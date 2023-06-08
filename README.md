@@ -4,6 +4,9 @@ This is a machine annotator for Japanese free text incident reports of medicatio
 ### SETUP:
 (1) Please mount the shared files (including "wiki-ja.model", "config.json", "model_entity_220309.bin", and "model_3_220310_2.bin") accordingly into "TOKENIZER_MODEL", "BERT_CONIFG_FILE", "BERT_PRETRAINED_MODEL", "MODEL_SAVE_PATH".
 
+These files can be found here:
+https://drive.google.com/file/d/1dbP-xEV74U4RshB6mYs7OKZk8qpFHSoP/view?usp=drive_link
+
 (2) Next please set up input/output file paths:
   - "in_dir": the input file path, it should be a xlsx file with two columns: "id" and "report", saved in the "freetext" sheet. 
   - "out_dir": the output file path, it will generate the entity-level predicted output from the trained machine-annotator.
